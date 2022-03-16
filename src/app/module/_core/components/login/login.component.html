@@ -1,0 +1,82 @@
+<section class="">
+  <div class="container-fluid custom_width_account">
+    <div class="home">
+      <div class="loginFlex">
+        <div class="img">
+          <img src="../../../../../assets//login/Group 9387.svg" alt="" />
+        </div>
+        <div class="">
+          <h2><strong>Welcome Back!</strong></h2>
+          <p>Please login to your account</p>
+          <form>
+            <div class="form-group">
+              <input
+                type="text"
+                class="form-control custom-input"
+                id="userName"
+                placeholder="User Name"
+                formControlName="username"
+                maxlength="60"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <input
+                type="password"
+                class="form-control custom-input"
+                id="password"
+                placeholder="Password"
+                formControlName="password"
+                maxlength="50"
+                required
+              />
+            </div>
+            <div class="row">
+              <div class="col-6">
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="rememberMe"
+                  />
+                  <label
+                    class="form-check-label form-font-size"
+                    for="rememberMe"
+                  >
+                    Remember me
+                  </label>
+                </div>
+              </div>
+              <div class="col-6 text-right">
+                <div class="form-group">
+                  <a
+                    class="form-font-size"
+                    role="button"
+                    routerLink="/auth/forgot-password"
+                    >Forgot Password?</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div>
+              <button type="submit" class="btn solid-btn mr-4">Login</button>
+              <a type="" class="btn outline-btn" routerLink="/auth/registration"
+                >Register</a
+              >
+            </div>
+          </form>
+          <div class="row ml-1 mt-4">
+            <div class="d-inline text-primary mr-1">
+              <hr />
+            </div>
+            <div class="d-inline text-primary" style="font-size: 0.8rem">
+              Or login with
+            </div>
+          </div>
+          <div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
