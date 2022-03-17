@@ -4,6 +4,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { LoginComponent } from './components/login/login.component';
 import { ForgotComponent } from './components/forgot/forgot.component';
+import { MaterialModule } from 'src/app/material/material.module';
 
 
 
@@ -14,7 +15,7 @@ import { ForgotComponent } from './components/forgot/forgot.component';
   ],
   imports: [
     CommonModule,
-    
+    MaterialModule,
     CoreRoutingModule
   ]
 })

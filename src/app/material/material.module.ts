@@ -1,7 +1,7 @@
 // material.module.ts
 import { ModuleWithProviders, NgModule } from '@angular/core';
 import {
-  MAT_LABEL_GLOBAL_OPTIONS,
+
   MatNativeDateModule,
   MAT_DATE_LOCALE,
 } from '@angular/material/core';
@@ -39,8 +39,7 @@ import { MatTabsModule } from '@angular/material/tabs';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatTreeModule } from '@angular/material/tree';
-import { FlexLayoutModule } from '@angular/flex-layout';
-import { SatDatepickerModule, SatNativeDateModule } from 'saturn-datepicker';
+
 // import { MatSelectFilterModule } from 'mat-select-filter';
 
 const mm = [
@@ -79,9 +78,7 @@ const mm = [
   MatTooltipModule,
   MatTreeModule,
   MatNativeDateModule,
-  FlexLayoutModule,
-  SatDatepickerModule,
-  SatNativeDateModule
+
 ];
 
 @NgModule({
