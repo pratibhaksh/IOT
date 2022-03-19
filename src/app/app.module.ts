@@ -1,3 +1,4 @@
+import { DashboardModule } from './module/dashboard/dashboard.module';
 import { RouterModule } from '@angular/router';
 import { CoreModule } from './module/_core/core.module';
 import { ThemeModule } from './_theme/theme.module';
@@ -13,11 +14,13 @@ import { SideBarComponent } from './_theme/side-bar/side-bar.component';
 import { DealerComponent } from './module/dealer/dealer.component';
 import { LocationStrategy, HashLocationStrategy } from '@angular/common';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { DashboardComponent } from './module/dashboard/dashboard.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     DealerComponent,
+    DashboardComponent,
  
   ],
   imports: [
@@ -27,7 +30,13 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     CoreModule,
     AppRoutingModule,
     ThemeModule,
-    NgbModule,
+    DashboardModule
+    // NgbModule
+    // RouterModule,
+    // CoreModule,
+    // AppRoutingModule,
+    // ThemeModule,
+    // NgbModule
   ],
   providers: [{ provide: LocationStrategy, useClass: HashLocationStrategy },],
   bootstrap: [AppComponent]
