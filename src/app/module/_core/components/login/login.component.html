@@ -1,0 +1,104 @@
+<section class="container">
+  <div>
+    <div class="row">
+      <div class="col-md-12">
+        <div class="knowmore">Know More</div>
+      </div>
+    </div>
+
+    <div class="loginFlex">
+      <div class="t-r">
+        <img
+          src="../../../../../assets//login/Group 9387.svg"
+          alt=""
+          class="loginsideimg"
+        />
+      </div>
+      <div>
+        <div class="welcomet">Welcome back! Please login to your account.</div>
+
+        <div class="col-md-12">
+          <form [formGroup]="loginFormGroup">
+            <div class="form-group mr-2">
+              <mat-form-field class="example-full-width">
+                <mat-label>User ID</mat-label>
+                <input matInput formControlName="email" />
+                <small
+                  *ngIf="loginForm['email'].invalid && isSubmitted"
+                  class="p-error"
+                  ><span *ngIf="loginForm['email']; errors: ['required']"
+                    >email is required</span
+                  >
+                  <span *ngIf="loginForm['email']; errors: ['email']"
+                    >email is invalid</span
+                  ></small
+                >
+              </mat-form-field>
+            </div>
+            <div class="form-group mr-2">
+              <mat-form-field class="example-full-width">
+                <mat-label>Password</mat-label>
+                <input matInput formControlName="password" />
+
+                <small
+                  *ngIf="loginForm['password'].invalid && isSubmitted"
+                  class="p-error"
+                  >Password is required
+                </small>
+              </mat-form-field>
+            </div>
+            <div class="row t10">
+              <div class="col-6">
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="rememberMe"
+                  />
+                  <label
+                    class="form-check-label form-font-size t-color"
+                    for="rememberMe"
+                  >
+                    Remember me
+                  </label>
+                </div>
+              </div>
+              <div class="col-6 t-r">
+                <div class="form-group">
+                  <a
+                    class="form-font-size t-color"
+                    role="button"
+                    routerLink="/auth/forgot-password"
+                    >Forgot Password?</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="t-center">
+              <button
+                type="submit"
+                class="btn mr-4 getstarted"
+                (click)="onSubmit()"
+              >
+                Get Started
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="fotter">
+  <div class="d-flex copyee">
+    <div class="f-copy">Copyright Beauto Systems Pvt Ltd</div>
+    <div class="ma-l">
+      <span> Terms </span> <span> | </span> <span> Privacy </span>
+      <span><img src="../../../../../assets/img/174857.png" /></span>
+      <span><img src="../../../../../assets/img/facebook.png" /></span>
+      <span><img src="../../../../../assets/img/twitter.png" /></span>
+    </div>
+  </div>
+</div>
