@@ -11,11 +11,12 @@ import { LoginService } from '../../service/login.service';
   styleUrls: ['./login.component.scss']
 })
 export class LoginComponent implements OnInit {
+
   loginFormGroup!: FormGroup;
 
   isSubmitted=false;
-  authMessage = 'Email or Password are wrong';
   authError = false;
+  authMessage: string;
   constructor(private formBuilder:FormBuilder, 
     private auth: LoginService,
     private localstorage:LocalstorageService,

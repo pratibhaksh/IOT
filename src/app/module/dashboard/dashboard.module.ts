@@ -6,20 +6,22 @@ import { HttpClientModule } from '@angular/common/http';
 import { MaterialModule } from 'src/app/material/material.module';
 import { ThemeModule } from 'src/app/_theme/theme.module';
 import { CoreModule } from '../_core/core.module';
-import { DashboardComponent } from './dashboard.component';
+import { DealerMgmtComponent } from './componets/dealer-mgmt/dealer-mgmt.component';
+import { VendorMgmtComponent } from './componets/vendor-mgmt/vendor-mgmt.component';
 
 
 
 @NgModule({
   declarations: [
- DashboardComponent
+    DealerMgmtComponent,
+    VendorMgmtComponent
   ],
   imports: [
     CommonModule,
     RouterModule,
     DashboardRouingModule,     
-    ThemeModule,
     CoreModule, 
+    ThemeModule,
     HttpClientModule
   ]
 })

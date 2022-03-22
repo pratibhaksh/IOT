@@ -5,17 +5,16 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { LoginComponent } from './components/login/login.component';
 import { ForgotComponent } from './components/forgot/forgot.component';
+
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
-
-
-
 @NgModule({
   declarations: [
     LoginComponent,
     ForgotComponent
   ],
   imports: [
+
     CommonModule, 
     CoreRoutingModule,
     FormsModule,
@@ -23,6 +22,8 @@ import { HttpClientModule } from '@angular/common/http';
     HttpClientModule,
     MaterialModule
   ],
+
+  
 
 })
 export class CoreModule { }
